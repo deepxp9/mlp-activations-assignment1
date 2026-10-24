@@ -10,8 +10,10 @@ The textbook MLP from *Generative Deep Learning* (2nd ed.), [`02_deeplearning/01
 
 | Activation | Test accuracy | Test loss |
 |---|---|---|
-| ReLU | 48.6% | 1.454 |
-| LeakyReLU | 48.1% | 1.462 |
-| Sigmoid | 47.1% | 1.471 |
+| ReLU | 48.2% | 1.459 |
+| LeakyReLU | **49.1%** | **1.435** |
+| Sigmoid | 47.5% | 1.467 |
+
+Result: LeakyReLU ≈ ReLU > Sigmoid. ReLU and LeakyReLU swap places between runs; Sigmoid is consistently last.
 
 Setup (same as the textbook): Flatten -> Dense(200) -> Dense(150) -> Dense(10, softmax), Adam (lr 0.0005), batch size 32, 10 epochs.
